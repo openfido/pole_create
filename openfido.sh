@@ -25,4 +25,4 @@ OUTPUTGLM=$(grep '^OUTPUTGLM,' ${OPENFIDO_INPUT}/config.csv | cut -f2 -d,)
 OPTIONS=$(grep '^OPTIONS,' ${OPENFIDO_INPUT}/config.csv | cut -f2 -d,)
 
 cd ${OPENFIDO_OUTPUT}
-/usr/local/bin/gridlabd create_poles ${INPUTGLM} --spacing=${SPACING} --pole_type=${POLETYPE} --pole_data=${POLEDATACSV} --weather=${WEATHERNAME} ${OPTIONS} --output=${OUTPUTGLM}
+/usr/local/bin/gridlabd create_poles ${INPUTGLM} --spacing="${SPACING}" --pole_type="${POLETYPE}" --pole_data="${POLEDATACSV}" --weather="${WEATHERNAME}" --output="${OUTPUTGLM}" ${OPTIONS}
