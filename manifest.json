@@ -9,13 +9,13 @@
   },
   "config" : {
     "INPUTGLM" : {
-      "prompt" : "Input GLM",
+      "prompt" : "Input model (GLM)",
       "description" : "GridLAB-D model GLM file",
       "input_type" : "upload required",
       "default" : ""
     },
     "SPACING" : {
-      "prompt" : "Pole spacing",
+      "prompt" : "Pole spacing (ft)",
       "description" : "Distance between poles (ft)",
       "input_type" : "str",
       "default" : "100"
@@ -27,26 +27,26 @@
       "default" : "WOOD-EC-45/4"
     },
     "POLEDATACSV" : {
-      "prompt" : "Pole type",
+      "prompt" : "Pole data (CSV)",
       "description" : "Type of pole structure",
       "input_type" : "upload",
       "default" : ""
     },
     "WEATHERNAME" : {
+      "prompt" : "Weather name",
       "description" : "Name for weather data",
-      "prompt" : "Name",
       "input_type" : "str",
       "default" : "forecast"
     },
     "OUTPUTGLM" : {
-      "description" : "Output GLM filename",
-      "prompt" : "Name",
+      "prompt" : "Output (GLM)",
+      "description" : "Output filename (GLM)",
       "input_type" : "str",
       "default" : "poles.glm"
     },
     "OPTIONS" : {
-      "description" : "Name for weather data",
-      "prompt" : "Name",
+      "description" : "Additional options",
+      "prompt" : "Options",
       "input_type" : "str",
       "default" : "--ignore_location --include_network"
     }
