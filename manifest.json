@@ -1,0 +1,54 @@
+{
+  "description" : "Pole creation tool for GridLAB-D",
+  "docker" : "slacgismo/gridlabd:latest",
+  "git" : "https://github.com/openfido/pole_create.git",
+  "branch" : "main",
+  "script" : "openfido.sh",
+  "manual" : {
+    "config" : "csv"
+  },
+  "config" : {
+    "INPUTGLM" : {
+      "prompt" : "Input GLM",
+      "description" : "GridLAB-D model GLM file",
+      "input_type" : "upload required",
+      "default" : ""
+    },
+    "SPACING" : {
+      "prompt" : "Pole spacing",
+      "description" : "Distance between poles (ft)",
+      "input_type" : "str",
+      "default" : "100"
+    },
+    "POLETYPE" : {
+      "prompt" : "Pole type",
+      "description" : "Type of pole structure",
+      "input_type" : "str",
+      "default" : "WOOD-EC-45/4"
+    },
+    "POLEDATACSV" : {
+      "prompt" : "Pole type",
+      "description" : "Type of pole structure",
+      "input_type" : "upload",
+      "default" : ""
+    },
+    "WEATHERNAME" : {
+      "description" : "Name for weather data",
+      "prompt" : "Name",
+      "input_type" : "str",
+      "default" : "forecast"
+    },
+    "OUTPUTGLM" : {
+      "description" : "Output GLM filename",
+      "prompt" : "Name",
+      "input_type" : "str",
+      "default" : "poles.glm"
+    },
+    "OPTIONS" : {
+      "description" : "Name for weather data",
+      "prompt" : "Name",
+      "input_type" : "str",
+      "default" : "--ignore_location --include_network"
+    }
+  }
+}
